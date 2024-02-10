@@ -63,6 +63,7 @@ sudo apt-mark hold kubelet kubeadm kubectl
 
 ##### Step 4: Initialize Cluster with kubeadm (Only master node)
 ```sh
+swapoff -a # turn swap off
 kubeadm init --pod-network-cidr=10.244.0.0/16
 ```
 ```sh
