@@ -47,6 +47,7 @@ spec:
 ```
 ```sh
 kubectl apply -f ingress-tls.yaml
+kubectl delete -A ValidatingWebhookConfiguration ingress-nginx-admission
 ```
 #### Step 4 - Make a request to Controller:
 ```sh
