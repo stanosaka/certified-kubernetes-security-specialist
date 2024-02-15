@@ -77,6 +77,10 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 ```
 
+##### Step 6: Untaint node
+```sh
+kubectl taint nodes --all node-role.kubernetes.io/master-
+```
 #### Location of Manifest files for K8s components:
 ```sh
 cd /etc/kubernetes/manifests
