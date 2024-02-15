@@ -80,6 +80,7 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 ##### Step 6: Untaint node
 ```sh
 kubectl taint nodes --all node-role.kubernetes.io/master-
+kubectl taint nodes --all node-role.kubernetes.io/control-plane-
 ```
 #### Location of Manifest files for K8s components:
 ```sh
